@@ -87,7 +87,7 @@ nav ul li a:hover {
 
 /* Section skills */
 #skills {
-    padding: 40px 20px;
+    padding: 150px 20px;
     background-color: #f5f5f5;
 }
 
@@ -125,15 +125,18 @@ nav ul li a:hover {
 
 /* Skill bar progress level */
 .skill-level {
-    height: 100%;
+    height: 20px;
+    background-color: #4caf50;
+    color: white;
     line-height: 20px;
     text-align: right;
-    color: #fff;
-    padding-right: 10px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    border-radius: 15px 0 0 15px;
-    transition: width 1s ease-in-out;
+    border-radius: 5px;
+    width: 0; /* Start with width 0 */
+    transition: width 2s ease-out; /* Smooth transition for width */
+}
+
+.skill-level.animate {
+    /* The width will be set inline in the HTML or via JavaScript */
 }
 
 /* Warna skill-level sesuai jenis keterampilan */
@@ -152,6 +155,11 @@ nav ul li a:hover {
 
 .skill-level.python {
     background-color: #306998; /* Python: Warna biru tua */
+}
+
+.project-list {
+    text-align: left;
+    padding-top: 70px;
 }
 
 @keyframes fillAnimation {
