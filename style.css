@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: transparent; /* Sesuai gambar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    margin-right: 20px;
+    margin-top:40px
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right; /* Menyusun menu di tengah */
+}
+
+nav ul li {
+    margin: 0 20px; /* Jarak antar item menu */
+}
+
+nav ul li a:hover {
+    color: #C70039; /* Warna saat hover */
+    transition-duration: 0.2s;
+}
+
+.home {
+    text-align: left;
+    background-image: url('img/Home.svg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.home h1{
+    font-size: 50px;
+}
+
+.home h1 span{
+    font-size: 50px;
+    background: linear-gradient(90deg, #C70039, #900C3F); /* Define the gradient colors */
+    -webkit-background-clip: text; /* Ensure background applies only to text */
+    -webkit-text-fill-color: transparent; /* Make the fill color transparent */
+}
+
+.home h3 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.home button{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #C70039;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.home button:hover{
+  background-color: white;
+  color: #C70039;
+}
+
+.about {
+    text-align: center;
+    background-image: url('img/About me.svg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-size: 18px
+}
+
+.about h1{
+    margin-right: 0;
+}
+
+.paragraph-about {
+    padding-top: 70px;
+}
+
+/* Section skills */
+#skills {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.skills-list h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Skill bar container */
+.skill {
+    margin: 15px auto;
+    width: 80%;
+    max-width: 700px;
+}
+
+.skill p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+    font-family: inherit; /* mengikuti proto-kanit-regular */
+}
+
+/* Skill bar background */
+.skill-bar {
+    width: 100%;
+    background-color: #ddd; /* Warna abu default */
+    height: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Skill bar progress level */
+.skill-level {
+    height: 100%;
+    line-height: 20px;
+    text-align: right;
+    color: #fff;
+    padding-right: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 15px 0 0 15px;
+    transition: width 1s ease-in-out;
+}
+
+/* Warna skill-level sesuai jenis keterampilan */
+.skill-level.html {
+    background-color: #e34c26; /* HTML: Warna oranye */
+}
+
+.skill-level.css {
+    background-color: #264de4; /* CSS: Warna biru */
+}
+
+.skill-level.js {
+    background-color: #f7df1e; /* JavaScript: Warna kuning */
+    color: #000; /* Warna teks hitam karena kontras */
+}
+
+.skill-level.python {
+    background-color: #306998; /* Python: Warna biru tua */
+}
+
+@keyframes fillAnimation {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.skill-level {
+    height: 20px;
+    background-color: #4caf50;
+    color: white;
+    line-height: 20px;
+    text-align: right;
+    border-radius: 5px;
+    animation: fillAnimation 2s ease-out forwards;
+}
+
+section {
+    padding: 100px 50px; /* Memberikan padding lebih untuk menghindari navbar menutupi konten */
+    min-height: 100vh; /* Mengisi seluruh tinggi layar */
+    text-align: center;
+}
+
+nav ul li a {
+    color: black; /* Warna teks putih */
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold; /* Membuat teks lebih tebal */
+    font-size: 16px;
+    display: block;
+    text-transform: uppercase; /* Membuat teks kapital */
+}
+
+.menu-style {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #23527c;
+}
+
+.kanit-bold {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.icon {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #23527c;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
