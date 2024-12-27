@@ -1,13 +1,11 @@
-
 function viewWork() {
-    window.location.href = 'https://github.com/YaBoyAri';
+    window.open('https://github.com/YaBoyAri', '_blank', 'noopener,noreferrer');
 }
 
 function hireMe() {
-    window.location.href = 'https://mail.google.com/mail/u/0/#inbox?compose=new'
+    window.open('https://mail.google.com/mail/u/0/#inbox?compose=new', '_blank', 'noopener,noreferrer');
 }
 
-// Function to check if an element is in the viewport
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
