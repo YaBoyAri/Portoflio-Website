@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: transparent; /* Sesuai gambar */
+    background-color: transparent;
     position: fixed;
     width: 100%;
     top: 0;
@@ -16,15 +16,15 @@ nav ul {
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: right; /* Menyusun menu di tengah */
+    justify-content: right;
 }
 
 nav ul li {
-    margin: 0 20px; /* Jarak antar item menu */
+    margin: 0 20px;
 }
 
 nav ul li a:hover {
-    color: #C70039; /* Warna saat hover */
+    color: #C70039; 
     transition-duration: 0.2s;
 }
 
@@ -40,10 +40,9 @@ nav ul li a:hover {
 }
 
 .home h1 span{
-    font-size: 50px;
-    background: linear-gradient(90deg, #C70039, #900C3F); /* Define the gradient colors */
-    -webkit-background-clip: text; /* Ensure background applies only to text */
-    -webkit-text-fill-color: transparent; /* Make the fill color transparent */
+    background: linear-gradient(90deg, #C70039, #900C3F); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
 }
 
 .home h3 {
@@ -85,7 +84,6 @@ nav ul li a:hover {
     padding-top: 70px;
 }
 
-/* Section skills */
 #skills {
     padding: 150px 20px;
     background-color: #f5f5f5;
@@ -98,7 +96,6 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-/* Skill bar container */
 .skill {
     margin: 15px auto;
     width: 80%;
@@ -110,20 +107,18 @@ nav ul li a:hover {
     font-weight: 600;
     margin-bottom: 8px;
     color: #444;
-    font-family: inherit; /* mengikuti proto-kanit-regular */
+    font-family: inherit;
 }
 
-/* Skill bar background */
 .skill-bar {
     width: 100%;
-    background-color: #ddd; /* Warna abu default */
+    background-color: #ddd;
     height: 20px;
     border-radius: 15px;
     overflow: hidden;
     position: relative;
 }
 
-/* Skill bar progress level */
 .skill-level {
     height: 20px;
     background-color: #4caf50;
@@ -131,35 +126,40 @@ nav ul li a:hover {
     line-height: 20px;
     text-align: right;
     border-radius: 5px;
-    width: 0; /* Start with width 0 */
-    transition: width 2s ease-out; /* Smooth transition for width */
+    width: 0; 
+    transition: width 2s ease-out; 
 }
 
 .skill-level.animate {
     /* The width will be set inline in the HTML or via JavaScript */
 }
 
-/* Warna skill-level sesuai jenis keterampilan */
 .skill-level.html {
-    background-color: #e34c26; /* HTML: Warna oranye */
+    background-color: #e34c26; 
 }
 
 .skill-level.css {
-    background-color: #264de4; /* CSS: Warna biru */
+    background-color: #264de4; 
 }
 
 .skill-level.js {
-    background-color: #f7df1e; /* JavaScript: Warna kuning */
-    color: #000; /* Warna teks hitam karena kontras */
+    background-color: #f7df1e; 
+    color: #000; 
 }
 
 .skill-level.python {
-    background-color: #306998; /* Python: Warna biru tua */
+    background-color: #306998;
 }
 
 .project-list {
     text-align: left;
     padding-top: 70px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.project-list img {
+    width: 50%;
 }
 
 @keyframes fillAnimation {
@@ -178,19 +178,19 @@ nav ul li a:hover {
 }
 
 section {
-    padding: 100px 50px; /* Memberikan padding lebih untuk menghindari navbar menutupi konten */
-    min-height: 100vh; /* Mengisi seluruh tinggi layar */
+    padding: 100px 50px;
+    min-height: 100vh;
     text-align: center;
 }
 
 nav ul li a {
-    color: black; /* Warna teks putih */
+    color: black; 
     text-decoration: none;
     padding: 15px 20px;
-    font-weight: bold; /* Membuat teks lebih tebal */
+    font-weight: bold; 
     font-size: 16px;
     display: block;
-    text-transform: uppercase; /* Membuat teks kapital */
+    text-transform: uppercase; 
 }
 
 .menu-style {
@@ -252,4 +252,107 @@ nav ul li a {
 
 html {
     scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 0; 
+        font-size: 16px; 
+    }
+
+    header {
+        height: 50px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        padding: 0 30px; 
+    }
+
+    nav ul {
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        margin: 0; 
+        padding: 0;
+       
+    }
+
+    nav ul li {
+        margin: 0 10px; 
+    }
+
+    nav ul li a {
+        font-size: 14px; 
+        padding: 5px 10px;
+    }
+
+    .home {
+        text-align: center; 
+        padding: 20px;
+    }
+
+    .home h1 {
+        font-size: 24px; 
+    }
+
+    .home h3 {
+        font-size: 14px; 
+        line-height: 1.4; 
+    }
+
+    .home button {
+        font-size: 14px; 
+        padding: 10px 15px; 
+        margin: 10px 0; 
+        width: 100%; 
+        max-width: 300px; 
+    }
+
+    .about h1 {
+        font-size: 1.5rem; 
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .about, .skills, .project-list {
+        padding: 20px; 
+        text-align: center; 
+    }
+
+    .skills-list h1 {
+        font-size: 1.5rem; 
+    }
+
+    .skill {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    .skill-bar {
+        height: 15px; 
+    }
+
+    .project h1 {
+        font-size: 20px; 
+    }
+
+    .project-list h2 {
+        font-size: 20px;
+    }
+
+    .project-list p {
+        font-size: 14px;
+    }
+    .project-list img {
+        width: 100%; 
+        height: auto; 
+        border-radius: 8px; 
+    }
+
+    section {
+        padding: 40px 20px; 
+        min-height: 70vh;
+    }
 }

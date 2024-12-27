@@ -3,6 +3,10 @@ function viewWork() {
     window.location.href = 'https://github.com/YaBoyAri';
 }
 
+function hireMe() {
+    window.location.href = 'https://mail.google.com/mail/u/0/#inbox?compose=new'
+}
+
 // Function to check if an element is in the viewport
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();

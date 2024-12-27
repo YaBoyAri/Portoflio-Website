@@ -17,12 +17,11 @@
                <li><a href="#about">About</a></li>
                <li><a href="#skills">Skills</a></li>
                <li><a href="#project">Project</a></li>
-               <li><a href="#contact">Contact</a></li>
            </ul>
        </nav>
     </header>
 
-    <section id="home" class="home kanit-regular">
+    <section id="home" class="home kanit-regular"><br><br>
         <p>HELLO!</p>
         <h1>I'm <span>Afratsin Wiradhiyaa Asaari</span> </h1>
         <h3>I'm a Undergraduate of Computer Science, Universitas Sriwijaya.
@@ -30,7 +29,7 @@
             But I'm willing to learn and will keep improving myself.</br>
         </h3>
         <button type="button" onclick="viewWork()">View Work</button>
-        <button type="button">Hire Me</button>
+        <button type="button" onclick="hireMe()">Hire Me</button>
     </section>
 
     <section id="about" class="about kanit-regular">
@@ -49,7 +48,6 @@
             <h1>My Programming Skills</h1>
             <p>Marvin Minsky<br>"You don't understand anything until you learn it more than one way"</p><br>
     
-            <!-- Skill 1: HTML -->
             <div class="skill">
                 <p>HTML</p>
                 <div class="skill-bar">
@@ -57,15 +55,13 @@
                 </div>
             </div>
     
-            <!-- Skill 2: CSS -->
             <div class="skill">
                 <p>CSS</p>
                 <div class="skill-bar">
                     <div class="skill-level css" style="width: 80%;">80%</div>
                 </div>
             </div>
-    
-            <!-- Skill 3: JavaScript -->
+
             <div class="skill">
                 <p>JavaScript</p>
                 <div class="skill-bar">
@@ -73,7 +69,6 @@
                 </div>
             </div>
     
-            <!-- Skill 4: Python -->
             <div class="skill">
                 <p>Python</p>
                 <div class="skill-bar">
@@ -87,30 +82,31 @@
     <section id="project" class="project kanit-regular">
         <h1>Every project that i have done in previous year</h1>
         <div class="project-list">
-            <ol>
-                <li>
-                    <a href="https://github.com/YaBoyAri">Daisy Scrumble</a>
-                    <p>A feature-rich platform inspired by Scrumble, designed for managing and organizing 
-                        bakery items online. 
-                        The website support guest checkouts. Guests are assigned unique IDs, allowing them 
-                        to create temporary collections, though they must complete a form to obtain their 
-                        guest ID.</p>
-                    <img>    
-                </li>
-                <li>
-                    <a href="https://kostqu.store/">Kost Qu</a>
-                    <p>A responsive website that helps users find boarding houses with advanced features 
-                        such as room-type selection, 
-                        dynamic pricing, and search functionality. Now integrated with a database and 
-                        enhanced UI for a better user experience. </p>
-                </li>
-            </ol>
+            <h2>1. Daisycrumble</h2>
+            <p>A Website that inspired by Scrumble. designed for managing 
+                and organizing bakery items online.
+            </p>
+            <img src="img/daisycrumble.png" alt="" class="project-image"> <br>
+            <a href="https://github.com/YaBoyAri/daisycrumble">More about this project</a>
         </div>
-    </section>
 
-    <section id="contact" class="contact kanit-regular">
-        <h1>Some Of My Personal Contact</h1>
+        <div class="project-list">
+            <h2>2. KostQu</h2>
+            <p>A responsive website that helps users find boarding houses with advanced features such as<br> room-type selection,
+                dynamic pricing, and search functionality. Now integrated with a database<br> and enhanced UI for a better user
+                experience.
+            </p>
+            <img src="img/kostqu.png" alt="" class="project-image"> <br>
+            <a href="https://kostqu.store/">More about this project</a>
+        </div>
 
+        <div class="project-list">
+            <h2>3. Simple Notes</h2>
+            <p>A Website that focused on CRUD Method
+            </p>
+            <img src="img/simple notes.png" alt="" class="project-image"> <br>
+            <a href="https://yaboyari.github.io/Simple-Notes/">More about this project</a>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>
