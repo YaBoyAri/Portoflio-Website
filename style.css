@@ -86,7 +86,7 @@ nav ul li a:hover {
 
 #skills {
     padding: 150px 20px;
-    background-color: #f5f5f5;
+    background-image: url('img/Skills.svg');
 }
 
 .skills-list h1 {
